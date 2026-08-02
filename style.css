@@ -1,0 +1,514 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#edf6ff,#dfefff,#f7fbff);
+    overflow-x:hidden;
+    min-height:100vh;
+}
+
+/* ==========================
+   BACKGROUND GLOW
+========================== */
+
+.bg-glow{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(80px);
+    z-index:-1;
+}
+
+.glow1{
+    width:350px;
+    height:350px;
+    background:#4fa9ff;
+    top:-120px;
+    left:-80px;
+    opacity:.35;
+}
+
+.glow2{
+    width:320px;
+    height:320px;
+    background:#7ed7ff;
+    right:-80px;
+    bottom:-100px;
+    opacity:.30;
+}
+
+/* ==========================
+   SCREEN
+========================== */
+
+.screen{
+    display:none;
+    width:100%;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+}
+
+.screen.active{
+    display:flex;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+
+    width:100%;
+    max-width:430px;
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:28px;
+
+    padding:30px;
+
+    box-shadow:
+
+    0 20px 60px rgba(0,70,255,.18),
+
+    inset 0 0 0 1px rgba(255,255,255,.65);
+
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.logo{
+
+    width:75px;
+    height:75px;
+
+    margin:auto;
+
+    border-radius:20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:linear-gradient(135deg,#198cff,#52d1ff);
+
+    color:#fff;
+
+    font-size:32px;
+
+    box-shadow:0 12px 30px rgba(0,120,255,.35);
+
+}
+
+/* ==========================
+   TITLES
+========================== */
+
+h1{
+
+    text-align:center;
+
+    margin-top:22px;
+
+    color:#163463;
+
+    font-size:34px;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+}
+
+h1 span{
+
+    color:#2196ff;
+
+}
+
+h2{
+
+    text-align:center;
+
+    color:#163463;
+
+    margin-bottom:8px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#6b7c97;
+
+    margin-top:10px;
+    margin-bottom:25px;
+
+}
+
+/* ==========================
+   DIAMOND ICON
+========================== */
+
+.diamond{
+
+    text-align:center;
+
+    font-size:75px;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+   INPUT
+========================== */
+
+label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#3d4d67;
+
+    font-weight:600;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:16px 18px;
+
+    border:none;
+
+    border-radius:16px;
+
+    outline:none;
+
+    background:#f2f8ff;
+
+    font-size:17px;
+
+    border:2px solid transparent;
+
+    transition:.3s;
+
+}
+
+input:focus{
+
+    border-color:#2ea6ff;
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+button{
+
+    width:100%;
+
+    margin-top:22px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#fff;
+
+    background:linear-gradient(135deg,#0d8cff,#4fd0ff);
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(0,130,255,.35);
+
+}
+
+/* ==========================
+   NOTICE
+========================== */
+
+.notice{
+
+    margin-top:28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.notice div{
+
+    background:#eef7ff;
+
+    padding:13px;
+
+    border-radius:14px;
+
+    color:#4a6485;
+
+}
+
+/* ==========================
+   BACK BUTTON
+========================== */
+
+.backBtn{
+
+    width:55px;
+    height:55px;
+
+    border-radius:50%;
+
+    padding:0;
+
+    margin-bottom:18px;
+
+    font-size:20px;
+
+}
+
+/* ==========================
+   REWARD LIST
+========================== */
+
+.reward-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* ==========================
+   REWARD CARD
+========================== */
+
+.reward-card{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    background:#f7fbff;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    border:2px solid transparent;
+
+}
+
+.reward-card:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#2ea8ff;
+
+    box-shadow:0 12px 24px rgba(0,120,255,.18);
+
+}
+
+.left{
+
+    font-size:38px;
+
+}
+
+.middle{
+
+    flex:1;
+
+    padding-left:18px;
+
+}
+
+.middle h3{
+
+    color:#174071;
+
+    margin-bottom:4px;
+
+}
+
+.middle span{
+
+    color:#7990a9;
+
+    font-size:14px;
+
+}
+
+.right{
+
+    font-size:28px;
+
+    color:#1f9bff;
+
+}
+
+/* ==========================
+   POPUP
+========================== */
+
+.popup{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(5,20,45,.45);
+
+    backdrop-filter:blur(6px);
+
+    padding:20px;
+
+}
+
+.popup-box{
+
+    width:100%;
+
+    max-width:380px;
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:35px;
+
+    text-align:center;
+
+    animation:popup .35s ease;
+
+}
+
+.popup-icon{
+
+    font-size:62px;
+
+    margin-bottom:15px;
+
+}
+
+#popupText{
+
+    margin:18px 0;
+
+    color:#586d87;
+
+    line-height:1.6;
+
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes popup{
+
+    from{
+
+        transform:scale(.7);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:480px){
+
+.card{
+
+padding:22px;
+
+}
+
+h1{
+
+font-size:28px;
+
+}
+
+.reward-card{
+
+padding:15px;
+
+}
+
+.left{
+
+font-size:30px;
+
+}
+
+.middle h3{
+
+font-size:18px;
+
+}
+
+}
